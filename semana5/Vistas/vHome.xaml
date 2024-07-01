@@ -41,9 +41,13 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <Label Text="{Binding id}" Grid.Column="0"/>
                             <Label Text="{Binding name}" Grid.Column="1"/>
+                            <Button x:Name="btnEditar" Text="Editar" Grid.Column="2" Clicked="btnEditar_Clicked" />
+                            <Button x:Name="btnEliminar" Text="Eliminar" Grid.Column="3" Clicked="btnEliminar_Clicked"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>           
